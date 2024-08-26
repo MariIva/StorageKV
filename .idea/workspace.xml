@@ -5,32 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9e822f96-8ed5-4787-a312-29adea7fc6db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/AppDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/dao/KV_DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/driver/H2jdbc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/entities/ConverterValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/entities/KV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/entities/Value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/file/json/Json.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/file/json/KVMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/rest/contriller/KVController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/rest/dto/KV_DTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/service/KVService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/service/KVServiceIMPL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/1.0/2024_08_26--0001-KV.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/data/2024_08_26--0001-KV.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/data/csv/2024_08_26--0001-KV.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/data/json/db_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db.changelog/db.changelog-master.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/mariiva/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/mariiva/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="63eec9392378e26c3a2b4daed4469a47c81eef84" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2lBXl9ri1Ceq2nxpEYYkJ1NcpgG" />
@@ -130,9 +113,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.AppDriver" />
         <item itemvalue="Application.ru.mariiva.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.AppDriver" />
+        <item itemvalue="Application.ru.mariiva.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +129,30 @@
       <option name="presentableId" value="Default" />
       <updated>1724654593167</updated>
     </task>
+    <task id="LOCAL-00001" summary="1 commit">
+      <option name="closed" value="true" />
+      <created>1724689382197</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724689382197</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1 commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 commit" />
   </component>
 </project>

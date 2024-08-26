@@ -1,17 +1,17 @@
 package ru.mariiva;
 
+import lombok.RequiredArgsConstructor;
 import org.h2.tools.Console;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.event.ApplicationReadyEvent;
+import org.springframework.context.ApplicationListener;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.Bean;
 import ru.mariiva.dao.KV_DAO;
 import ru.mariiva.entities.KV;
-import ru.mariiva.file.json.Json;
-import ru.mariiva.file.json.KVMapper;
 import ru.mariiva.service.KVServiceIMPL;
 
-import java.io.File;
-import java.nio.file.Paths;
 import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,15 +19,16 @@ import java.util.stream.Collectors;
 @SpringBootApplication
 public class App {
 
-    private static ConfigurableApplicationContext context, copyc;
+
+    private static ConfigurableApplicationContext context;
     public static void main(String[] args) {
         context = SpringApplication.run(App.class, args);
 
-        try {
+        /*try {
             Console.main(args);
         } catch (SQLException e) {
             throw new RuntimeException(e);
-        }
+        }*/
 
         startDemon();
         System.out.println("=============================");
@@ -58,4 +59,5 @@ public class App {
         daemon.start();
 
     }
+
 }

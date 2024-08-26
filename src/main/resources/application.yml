@@ -4,7 +4,7 @@ server:
 spring:
   # Подключение к H2 бд через jdbc
   datasource:
-    url: jdbc:h2:tcp://localhost/mem:db1
+    url: jdbc:h2:mem:testdb
   # Включение консоли
   h2:
     console:
