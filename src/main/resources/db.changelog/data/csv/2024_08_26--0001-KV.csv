@@ -1,0 +1,4 @@
+id;data
+1;Value(data=data1, ttl=5)
+2;Value(data=data2, ttl=10)
+3;Value(data=data3, ttl=15)
