@@ -11,5 +11,5 @@ public interface KVService {
     List<KV> getAll();
     String getByKey(String key);
     boolean insert(KV kv);
-    KV deleteByKey(String key);
+    String deleteByKey(String key);
 }

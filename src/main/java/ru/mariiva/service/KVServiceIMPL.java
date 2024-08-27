@@ -6,7 +6,6 @@ import ru.mariiva.dao.KV_DAO;
 import ru.mariiva.entities.KV;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -55,14 +54,14 @@ public class KVServiceIMPL implements KVService{
      * @return - удаленная пара, если удалениене удалось вернет null
      */
     @Override
-    public KV deleteByKey(String key) {
+    public String deleteByKey(String key) {
         KV byId = kvDao.findById(key).orElse(null);
         if (byId == null) {
             return null;
         }
         else {
             kvDao.deleteById(key);
-            return byId;
+            return byId.getValue().getData();
         }
     }
 }

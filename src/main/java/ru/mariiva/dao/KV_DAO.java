@@ -3,7 +3,6 @@ package ru.mariiva.dao;
 import org.springframework.data.jpa.repository.JpaRepository;
 import ru.mariiva.entities.KV;
 
-import java.util.List;
 
 /**
  * Интерфейс для запросов к БД

@@ -2,7 +2,6 @@ package ru.mariiva.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
-import ru.mariiva.rest.dto.KV_DTO;
 
 /**
  * Пара ключ значение сущость БД

@@ -3,7 +3,6 @@ package ru.mariiva.rest.dto;
 import lombok.Builder;
 import lombok.Data;
 import ru.mariiva.entities.KV;
-import ru.mariiva.entities.Value;
 
 /**
  * Данные, которые предоставляются клиенту

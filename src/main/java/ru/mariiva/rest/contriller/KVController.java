@@ -2,14 +2,12 @@ package ru.mariiva.rest.contriller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-import ru.mariiva.dao.KV_DAO;
 import ru.mariiva.entities.KV;
 import ru.mariiva.entities.Value;
 import ru.mariiva.file.json.Json;
 import ru.mariiva.file.json.KVMapper;
 import ru.mariiva.rest.dto.KV_DTO;
 import ru.mariiva.service.KVService;
-import ru.mariiva.service.KVServiceIMPL;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -20,6 +18,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequiredArgsConstructor
 public class KVController {
+    public static final String PATH_JSON = "src/main/resources/db.changelog/data/json/db_data.json";
     private final int TTL = 2000;
     private final KVService service;
 
@@ -42,7 +41,7 @@ public class KVController {
      * @return - значение, ассоциированное к ключом
      */
     @RequestMapping(value = "/kv", params = {"key"}, method = RequestMethod.GET)
-    public String get(@RequestParam String key){
+    public String getById(@RequestParam("key") String key){
         return service.getByKey(key);
     }
 
@@ -91,14 +90,8 @@ public class KVController {
      * @return - удаленный объект или null, если удаление не удалось
      */
     @DeleteMapping("/kv")
-    public KV_DTO remove(@RequestParam String key){
-        KV kv = service.deleteByKey(key);
-        if (kv != null) {
-            return KV_DTO.toDTO(kv);
-        }
-        else {
-            return null;
-        }
+    public String remove(@RequestParam String key){
+        return service.deleteByKey(key);
     }
 
     /**

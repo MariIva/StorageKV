@@ -1,18 +1,12 @@
 package ru.mariiva;
 
-import lombok.RequiredArgsConstructor;
-import org.h2.tools.Console;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.context.event.ApplicationReadyEvent;
-import org.springframework.context.ApplicationListener;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.Bean;
 import ru.mariiva.dao.KV_DAO;
 import ru.mariiva.entities.KV;
 import ru.mariiva.service.KVServiceIMPL;
 
-import java.sql.SQLException;
 import java.util.List;
 import java.util.stream.Collectors;
 
