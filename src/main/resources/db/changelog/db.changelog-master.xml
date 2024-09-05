@@ -4,7 +4,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
-    <include file="db.changelog/1.0/2024_08_26--0001-KV.xml"/>
+    <include file="db/changelog/1.0/2024_08_26--0001-KV.xml"/>
 <!--    <include file="db.changelog/data/2024_08_26&#45;&#45;0001-KV.xml"/>-->
 
 

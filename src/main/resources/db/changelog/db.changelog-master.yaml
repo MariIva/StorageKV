@@ -1,0 +1,22 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 2024_08_26--0001-KV
+      author: ivkina
+      changes:
+        - createTable:
+            tableName: KV
+            columns:
+              - column:
+                  name: id
+                  type: VARCHAR(255)
+                  autoIncrement: false
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: article_pk
+                    nullable: false
+              - column:
+                  name: data
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
